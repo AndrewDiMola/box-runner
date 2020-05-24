@@ -9,8 +9,8 @@ function love.load()
     game.WINDOW_TITLE = "Hello Platforming World!"
     game.TITLE = "BOX RUNNER: NOW WITH FASTER BOXES"
     game.RETRY = "GAME OVER: Press Space to play again"
-    game.DIFFICULTY_DURATION = 3
-    game.difficulty_counter = 0
+    game.VELOCITY_COUNTER_LOCAL_MAX = 3  -- Speed up velocity every ~3 seconds
+    game.velocity_counter = 0
     game.SCOREBOARD = "SCORE:  "
     game.score = 0
     game.is_active = true
@@ -67,8 +67,8 @@ function love.keypressed(key)
 end
 
 function love.update(dt)
-    game.difficulty_counter = game.difficulty_counter + dt
     if game.is_active then
+      game.velocity_counter = game.velocity_counter + dt
         if
             (player.x + player.WIDTH > enemy.x) and (player.x < enemy.x + enemy.WIDTH) and
                 (player.y > (enemy.y - enemy.HEIGHT))
@@ -91,9 +91,9 @@ function love.update(dt)
             enemy.x = enemy.START_X
         end
 
-        if game.difficulty_counter > game.DIFFICULTY_DURATION then
+        if game.velocity_counter > game.VELOCITY_COUNTER_LOCAL_MAX then
             enemy.speed = enemy.speed + 1
-            game.difficulty_counter = 0
+            game.velocity_counter = 0
         end
     end
 end
