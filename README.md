@@ -1,6 +1,8 @@
 # Box Runner
 Box Runner is a "Hello World!" game for learning LÖVE / Lua.
 
+![simpledemo](https://raw.githubusercontent.com/AndrewDiMola/box-runner/master/box-runner-demo.gif)
+
 # How to run the game
 > [LÖVE](https://love2d.org/wiki/Getting_Started) can load a game in two ways:
 > - From a folder that contains a main.lua file.
