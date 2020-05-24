@@ -1,5 +1,5 @@
-# Endless Box Runner
-Endless Box Runner is a "Hello World!" game for learning LÖVE / Lua.
+# Box Runner
+Box Runner is a "Hello World!" game for learning LÖVE / Lua.
 
 # How to run the game
 > [LÖVE](https://love2d.org/wiki/Getting_Started) can load a game in two ways:
