@@ -16,3 +16,6 @@ After colliding with a box, press spacebar to restart the game.
 
 # High scores
 Earn a higher score by jumping over more boxes! The longer you play, the higher your score.
+
+# License
+[MIT License](https://raw.githubusercontent.com/AndrewDiMola/endless-box-runner/master/LICENSE)
