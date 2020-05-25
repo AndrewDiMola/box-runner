@@ -1,5 +1,5 @@
 # Box Runner
-Box Runner is a "Hello World!" game for learning LÖVE / Lua.
+Box Runner is a "Hello World!"-style game for learning the basics of LÖVE / Lua.
 
 ![simpledemo](https://raw.githubusercontent.com/AndrewDiMola/box-runner/master/box-runner-demo.gif)
 
